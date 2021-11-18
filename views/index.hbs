@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <script>
+ function display_alert()
+ {
+ alert("SUBMITTED SUCCESSFULLY");
+ }
+ </script>
+
+</head>
+
+<body>
+    
+    <h1 class="head" style="display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+    font-size: xxx-large;
+    font-style: oblique;">Bank Registration Form</h1>
+    <br>
+    <div style="display: flex;
+    position: absolute;
+    right: 425px;
+    top: 266px; background: aliceblue;">
+        <form action="/" method="post">
+            <label> Firstname </label>
+            <input type="text" name="firstname" size="15" placeholder="Your name.." /> <br> <br>
+            <label> Lastname: </label>
+            <input type="text" name="lastname" size="15" placeholder="Your last name.." /> <br> <br>
+            <label>
+                Account type :
+            </label>
+            <select name="Accounttype">
+                <option value="Select here">Select here</option>
+                <option value="Savings account">Savings account</option>
+                <option value="Joint account">Joint account</option>
+                <option value="Current account">Current account</option>
+            </select>
+            <br>
+            <br>
+            <label>
+                Gender :
+            </label><br>
+            <input type="radio" name="gender" /> Male <br>
+            <input type="radio" name="gender" /> Female <br>
+            <input type="radio" name="gender" /> Other
+            <br>
+            <br>
+            <label>
+                Phone :
+            </label>
+            <input type="number" name="phone" size="10" placeholder="Type here"> <br> <br>
+            Address
+            <br>
+            <textarea cols="80" rows="5" value="address" name="address">
+</textarea>
+            <br> <br>
+            Email:
+            <input type="email" id="email" name="email" placeholder="Type here.."> <br>
+            <br> <br>
+            <input type="submit" value="Submit" onclick="display_alert()">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
+
+
